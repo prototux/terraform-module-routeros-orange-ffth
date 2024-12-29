@@ -1,5 +1,8 @@
 # Orange (france) consumer FTTH module for RouterOS
 
+## WARN
+This module (by design) doesn't include any firewall rules beside the NAT and the priority needed for the DHCP request to work. You very much need to add your own firewall rules!
+
 ## Usage
 ```terraform
 module "orange_ftth" {
