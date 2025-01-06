@@ -16,7 +16,7 @@ resource "routeros_interface_bridge_filter" "dhcp_prio" {
   # Set the priority
   action       = "set-priority"
   new_priority = 6
-  #passthrough = yes // missing param on the provider, bug reported
+  passthrough = yes
 }
 
 # Well, it's obvious, but... it's the classic NAT rule
